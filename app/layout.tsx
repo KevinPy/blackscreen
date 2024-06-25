@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import "./style.css";
 
 export const viewport: Viewport = {
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
         url: "https://blackscreen.app/images/icon-192x192.png",
         width: 192,
         height: 192,
-        alt: "Black screen"
+        alt: "Black screen",
       },
     ],
   },
@@ -37,8 +38,8 @@ export const metadata: Metadata = {
     title: "Black screen",
     description: "Just a black web page",
     creator: "@pyxeldev",
-    images: ['https://blackscreen.app/images/icon-192x192.png']
-  }
+    images: ["https://blackscreen.app/images/icon-192x192.png"],
+  },
 };
 
 export default function RootLayout({
@@ -51,7 +52,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
