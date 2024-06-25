@@ -2,6 +2,11 @@
   "name": "Black screen",
   "short_name": "Blackscreen",
   "description": "Just a black web page",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "icons": [
       {
         "src": "/images/icon-48x48.png",
@@ -70,10 +75,5 @@
         "sizes": "512x512",
         "purpose": "maskable"
       }
-  ],
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000"
+  ]
 }
