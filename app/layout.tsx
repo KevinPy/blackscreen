@@ -51,6 +51,7 @@ export default function RootLayout({
     <html>
       <head>
         <link rel="icon" href="./favicon.ico" sizes="any" />
+        <script defer src="https://umami-pc00848scwk8c8k48k44kskk.pyxel.dev/script.js" data-website-id="03362717-9e9a-40e4-8f77-28cbb2b2af29"></script>
       </head>
       <body>
         {children}
