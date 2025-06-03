@@ -14,7 +14,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages": "cp -r ./src ./public"
+    "export": "next build && next export",
+    "pages": "npm run export"
   },
   "dependencies": {
     "next": "14.2.4",
